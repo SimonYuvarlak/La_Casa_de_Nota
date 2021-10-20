@@ -1,3 +1,4 @@
 # La_Casa_de_Nota
-Adding dark mode
 
+=======
+Note taking app built with react
