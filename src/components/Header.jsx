@@ -13,17 +13,17 @@ function Header() {
   return (
     <ThemeProvider theme={themeMode}>
       <>
-      <GlobalStyles/>
-    <header>
-      <Toggle theme={theme} toggleTheme={themeToggler} />
-      <h1>
-        <Logo style={{ width: "100px", height: "50px", padding: "0px" }} />
-        <span style={{ paddingRight: "30px", position: "absolute", color: theme !== "light" && "#363537" }}>
-          La Casa de Nota
-        </span>
-      </h1>
-    </header>
-    </>
+        <GlobalStyles/>
+        <header>
+          <Toggle theme={theme} toggleTheme={themeToggler} />
+          <h1>
+            <Logo style={{ width: "100px", height: "50px", padding: "0px" }} />
+            <span style={{ paddingRight: "30px", position: "absolute", color: theme !== "light" && "#363537" }}>
+              La Casa de Nota
+            </span>
+          </h1>
+        </header>
+      </>
     </ThemeProvider>
   );
 }
