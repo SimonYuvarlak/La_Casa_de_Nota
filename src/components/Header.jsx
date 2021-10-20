@@ -27,5 +27,4 @@ function Header() {
     </ThemeProvider>
   );
 }
-
 export default Header;
