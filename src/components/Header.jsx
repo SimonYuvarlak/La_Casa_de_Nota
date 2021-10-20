@@ -18,7 +18,6 @@ function Header() {
       <Toggle theme={theme} toggleTheme={themeToggler} />
       <h1>
         <Logo style={{ width: "100px", height: "50px", padding: "0px" }} />
-        {/* <Note style={{ marginRight: "10px" }} /> */}
         <span style={{ paddingRight: "30px", position: "absolute" }}>
           La Casa de Nota
         </span>

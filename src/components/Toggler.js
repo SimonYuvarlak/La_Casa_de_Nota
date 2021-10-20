@@ -1,11 +1,11 @@
 import React from 'react'
 import { func, string } from 'prop-types';
-import styled from "styled-components"
-const Button = styled.button`
-  background: ${({ theme }) => theme.background};
-  border: 2px solid ${({ theme }) => theme.toggleBorder};
+import styled from "styled-components";
+import NightsStay from "@material-ui/icons/NightsStay";
+import WbSunny from "@material-ui/icons/WbSunny";
+
+const Span = styled.span`
   color: ${({ theme }) => theme.text};
-  border-radius: 8px;
   cursor: pointer;
   font-size:0.8rem;
   padding: 0.6rem;
@@ -13,10 +13,11 @@ const Button = styled.button`
   }
 `;
 const Toggle = ({theme,  toggleTheme }) => {
+    
     return (
-        <Button onClick={toggleTheme} >
-          <span style={{color: "white"}}>Switch Theme</span>
-        </Button>
+        <Span onClick={toggleTheme} >
+          {theme === "light" ? <WbSunny /> :  <NightsStay />}
+        </Span>
     );
 };
 Toggle.propTypes = {
