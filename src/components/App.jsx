@@ -11,12 +11,14 @@ function App() {
   const [notes, setNotes] = useState([]);
 
   function addNote(newNote) {
+    console.log("add note function has been pressed");
     setNotes(prevNotes => {
       return [...prevNotes, newNote];
     });
   }
 
   function deleteNote(id) {
+    console.log("delete node function is pressed");
     setNotes(prevNotes => {
       return prevNotes.filter((noteItem, index) => {
         return index !== id;

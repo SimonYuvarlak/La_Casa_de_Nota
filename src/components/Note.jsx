@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DeleteIcon from "@material-ui/icons/Delete";
+import { TextareaAutosize } from '@mui/material';
 
 function Note(props) {
   const [note, setNote] = React.useState({
@@ -20,6 +21,7 @@ function Note(props) {
 
   function handleClick() {
     props.onDelete(props.id);
+    console.log(props.id);
   }
 
   return (
@@ -30,12 +32,9 @@ function Note(props) {
             value={note.title}
             placeholder="Title"
         />
-        <textarea
-          name="content"
-          onChange={update}
-          value={note.content}
-          placeholder="Take a note..."
-          rows={5}
+        <TextareaAutosize
+          placeholder="Material ui"
+          defaultValue={note.content}
         />
         <button onClick={handleClick}>
           <DeleteIcon />
