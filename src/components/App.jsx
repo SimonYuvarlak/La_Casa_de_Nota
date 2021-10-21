@@ -27,13 +27,13 @@ function App() {
   }
 
   function updateNote(note, id){
-    console.log("before " + notes, id);
-    setNotes(prevNotes => {
-      return prevNotes.filter((noteItem, index) => {
-        return index !== id ? noteItem : note
-      });
+    console.log(notes[id]);
+    setNotes(() => {
+      notes[id].title = note.title;
+      notes[id].content = note.content;
+      return notes;
     });
-    console.log("afer " + notes);
+    console.log(notes[id]);
   }
 
   return (
