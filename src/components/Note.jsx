@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import DeleteIcon from "@material-ui/icons/Delete";
 import { TextareaAutosize, Input } from "@mui/material";
 
 function Note(props) {
-    useEffect(() => {}, [props]);
-
     function handleClick() {
         props.onDelete(props.id);
     }

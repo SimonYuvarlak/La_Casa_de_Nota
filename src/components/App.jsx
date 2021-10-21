@@ -18,10 +18,11 @@ function App() {
 
     function deleteNote(id) {
         console.log(id + " has been clicked");
-        notes.filter((index) => {
-            return index !== id;
+        setNotes((prevNotes) => {
+            return prevNotes.filter((noteItem, index) => {
+                return index !== id;
+            });
         });
-        setNotes([...notes]);
         console.log(notes);
     }
 
