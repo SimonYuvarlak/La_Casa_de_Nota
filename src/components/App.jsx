@@ -11,19 +11,29 @@ function App() {
   const [notes, setNotes] = useState([]);
 
   function addNote(newNote) {
-    console.log("add note function has been pressed");
     setNotes(prevNotes => {
       return [...prevNotes, newNote];
     });
   }
 
   function deleteNote(id) {
-    console.log("delete node function is pressed");
+    console.log(id + " has been clicked");
     setNotes(prevNotes => {
       return prevNotes.filter((noteItem, index) => {
         return index !== id;
       });
     });
+    console.log(notes);
+  }
+
+  function updateNote(note, id){
+    console.log("before " + notes, id);
+    setNotes(prevNotes => {
+      return prevNotes.filter((noteItem, index) => {
+        return index !== id ? noteItem : note
+      });
+    });
+    console.log("afer " + notes);
   }
 
   return (
@@ -38,6 +48,7 @@ function App() {
                 title={noteItem.title}
                 content={noteItem.content}
                 onDelete={deleteNote}
+                update={updateNote}
               />
             );
           })}
