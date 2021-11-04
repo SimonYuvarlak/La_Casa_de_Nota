@@ -29,7 +29,6 @@ function Note(props) {
             <button onClick={handleClick}>
                 <DeleteIcon />
             </button>
-            <button>Update Note</button>
         </div>
     );
 }
