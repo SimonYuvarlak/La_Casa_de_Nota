@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/La_Casa_de_Nota/precache-manifest.042c51e7bb3455152ef16f86eeed9f22.js"
+  "/La_Casa_de_Nota/precache-manifest.d28cac3514d0ca21899a1c8e8dbf76ad.js"
 );
 
 self.addEventListener('message', (event) => {
