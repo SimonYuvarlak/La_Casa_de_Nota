@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/La_Casa_de_Nota/static/js/main.9cacf755.chunk.js",
+    "main.js.map": "/La_Casa_de_Nota/static/js/main.9cacf755.chunk.js.map",
+    "runtime-main.js": "/La_Casa_de_Nota/static/js/runtime-main.1a039abf.js",
+    "runtime-main.js.map": "/La_Casa_de_Nota/static/js/runtime-main.1a039abf.js.map",
+    "static/js/2.0b565903.chunk.js": "/La_Casa_de_Nota/static/js/2.0b565903.chunk.js",
+    "static/js/2.0b565903.chunk.js.map": "/La_Casa_de_Nota/static/js/2.0b565903.chunk.js.map",
+    "index.html": "/La_Casa_de_Nota/index.html",
+    "precache-manifest.042c51e7bb3455152ef16f86eeed9f22.js": "/La_Casa_de_Nota/precache-manifest.042c51e7bb3455152ef16f86eeed9f22.js",
+    "service-worker.js": "/La_Casa_de_Nota/service-worker.js",
+    "static/media/dali_mask.d33f5904.svg": "/La_Casa_de_Nota/static/media/dali_mask.d33f5904.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1a039abf.js",
+    "static/js/2.0b565903.chunk.js",
+    "static/js/main.9cacf755.chunk.js"
+  ]
+}
